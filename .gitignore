@@ -1,0 +1,34 @@
+# 이 저장소는 제출 전에 공개로 바뀐다. 아래 항목은 커밋 기록에 절대 들어가면 안 된다.
+
+# 키·서명 (Pleos 키는 앱에 필요 없다. 혹시 복사돼도 올라가지 않게 막는다)
+secrets.properties
+keystore.properties
+*.keystore
+*.jks
+*.p12
+.env
+
+# 주행·검증 로그 (위치가 들어간다)
+*.jsonl
+probe-logs/
+logcat*.txt
+emulator.log
+
+# Android / Gradle
+local.properties
+.gradle/
+.kotlin/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+!apk/*.apk
+*.aab
+*.hprof
+
+# IDE / OS
+.idea/
+*.iml
+.DS_Store
