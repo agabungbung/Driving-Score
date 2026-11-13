@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- debug 빌드 전용: 개발 확인 도구. release에는 들어가지 않는다 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 내비 조회·경로 요청 (원본 JSON 기록 도구에서 경로를 걸 때) -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+
+    <application>
+        <!-- 내비 원본 JSON 기록 화면. 실행·경로 요청 명령은 NaviRawProbeActivity 주석에 있다 (XML 주석에는 대시 두 개를 쓸 수 없다) -->
+        <activity
+            android:name=".debug.NaviRawProbeActivity"
+            android:exported="true"
+            android:label="Navi raw probe" />
+    </application>
+</manifest>
